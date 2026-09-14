@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the TravelApp team with your travel questions and feedback.">
+    <title>Contact Us - TravelApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html" aria-label="TravelApp home">TravelApp</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="active" href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <h1>Contact Us</h1>
+        <p class="page-lede">Have a destination in mind or a recommendation to share? Send us a message.</p>
+        <form class="contact-form" id="contactForm" action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

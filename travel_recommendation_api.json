@@ -1,0 +1,43 @@
+{
+    "countries": [
+        {
+            "name": "Australia",
+            "cities": [
+                {
+                    "name": "Sydney",
+                    "imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=500&q=80",
+                    "description": "Sydney is a vibrant city known for its iconic Opera House."
+                },
+                {
+                    "name": "Melbourne",
+                    "imageUrl": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=500&q=80",
+                    "description": "Melbourne is known for its cultural heritage and coffee."
+                }
+            ]
+        }
+    ],
+    "temples": [
+        {
+            "name": "Taj Mahal",
+            "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&q=80",
+            "description": "An immense mausoleum of white marble, built in Agra."
+        },
+        {
+            "name": "Angkor Wat",
+            "imageUrl": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=500&q=80",
+            "description": "A massive Buddhist temple complex in Cambodia."
+        }
+    ],
+    "beaches": [
+        {
+            "name": "Bora Bora",
+            "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=500&q=80",
+            "description": "A small South Pacific island northwest of Tahiti."
+        },
+        {
+            "name": "Copacabana",
+            "imageUrl": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=500&q=80",
+            "description": "A famous neighborhood located in the South Zone of Rio de Janeiro."
+        }
+    ]
+}

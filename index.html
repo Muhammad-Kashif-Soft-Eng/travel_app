@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover recommended beaches, temples, and countries for your next adventure.">
+    <title>TravelApp | Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html" aria-label="TravelApp home">TravelApp</a>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter beach, temple, or country...">
+            <button id="btnSearch" type="button">Search</button>
+            <button id="btnClear" type="button">Clear</button>
+        </div>
+    </nav>
+
+    <main class="home-container">
+        <div class="intro">
+            <h1>Welcome to Your Next Adventure</h1>
+            <p>Explore the world's most beautiful beaches, majestic temples, and exciting countries. Search below to
+                find your next travel destination.</p>
+            <p class="search-hint">Try <button class="quick-search" type="button" data-query="beach">beach</button>,
+                <button class="quick-search" type="button" data-query="temple">temple</button>, or
+                <button class="quick-search" type="button" data-query="country">country</button>.
+            </p>
+        </div>
+        <div id="searchResults" class="results-container">
+            <!-- Search results will appear here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

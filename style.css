@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    gap: 1rem 2rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.nav-links a.active {
+    color: #74c0fc;
+    border-bottom: 2px solid #74c0fc;
+    padding-bottom: 0.25rem;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    min-width: 220px;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+}
+
+.search-bar button#btnClear {
+    background-color: #e74c3c;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #74c0fc;
+    outline-offset: 2px;
+}
+
+/* Containers */
+.home-container,
+.page-container {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h1 {
+    color: #1f3a5f;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.intro>p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.search-hint {
+    margin-top: 1rem !important;
+    color: #607d8b;
+}
+
+.quick-search {
+    border: 0;
+    background: transparent;
+    color: #1976d2;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Search Results Grid */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.result-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.result-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.result-card h3 {
+    color: #1f3a5f;
+    padding: 0 1rem 0.5rem;
+}
+
+.result-card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.result-content {
+    padding-top: 1rem;
+}
+
+.empty-state {
+    color: #607d8b;
+    text-align: center;
+    width: 100%;
+}
+
+.page-container h1 {
+    color: #1f3a5f;
+    margin-bottom: 1rem;
+}
+
+.page-lede {
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.team {
+    margin-top: 2rem;
+}
+
+.team h2 {
+    color: #1f3a5f;
+    margin-bottom: 1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 700px;
+}
+
+.team-member {
+    background: #fff;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 4px 12px rgba(31, 58, 95, 0.08);
+    padding: 1.25rem;
+}
+
+.team-member h3 {
+    color: #1f3a5f;
+}
+
+.team-member p {
+    color: #607d8b;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+.form-status {
+    color: #26734d;
+    font-weight: 600;
+    min-height: 1.6em;
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar input {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .home-container,
+    .page-container {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .search-bar button {
+        padding: 0.5rem 0.7rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
